@@ -49,3 +49,14 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err)
     pbuf_free(p);
     return ERR_OK;
 }
+I am interested to work on Ethernet protocol part on Kria KV260 board.
+Task -1 : User need to enter some data from Backend interface later clicking one WR_BUTTON then data need to transfer to FirmWare. 
+Task -2 : Whenever user clicking RD_BUTTON in Backend interface then  data should be read from FirmWare and display in Backend Interface 
+Note : Backend language should be C#(Tool : VS2017) , Firmware Code C (Tool : Vitis 2021.1)
+
+I need to send data to firm ware like bytes and receiving data from Firmware to Backend also Bytes.
+
+Note : Whenever user clicked the WR_BUTTON then WR_BUTTON shou be disable state untill data is written successfully.
+
+And User can be able to write data multiple times by clicking WR_BUTTON and read data by clicking  RD_BUTTON .
+
